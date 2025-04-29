@@ -8,7 +8,10 @@
 		"prepare": "svelte-kit sync || echo ''",
 		"prepack": "svelte-kit sync && svelte-package && publint",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"story:dev": "histoire dev",
+		"story:build": "histoire build",
+		"story:preview": "histoire preview"
 	},
 	"files": [
 		"dist",
@@ -31,6 +34,7 @@
 		"svelte": "^5.0.0"
 	},
 	"devDependencies": {
+		"@histoire/plugin-svelte": "1.0.0-alpha.2",
 		"@internationalized/date": "^3.8.0",
 		"@lucide/svelte": "^0.503.0",
 		"@sveltejs/adapter-auto": "^4.0.0",
@@ -42,6 +46,7 @@
 		"clsx": "^2.1.1",
 		"embla-carousel-svelte": "^8.6.0",
 		"formsnap": "^2.0.1",
+		"histoire": "1.0.0-alpha.2",
 		"mode-watcher": "^1.0.2",
 		"paneforge": "1.0.0-next.5",
 		"publint": "^0.3.2",
